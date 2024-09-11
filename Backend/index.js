@@ -33,7 +33,7 @@ app.use(bodyParser.urlencoded({extended : true}))
 
 
 const corsOption = {
-    origin : "http://localhost:5173",
+    origin : "https://netflix-fbgt.onrender.com",
     // origin : "https://netflix-2-0-1.onrender.com",
     credentials : true
 }
