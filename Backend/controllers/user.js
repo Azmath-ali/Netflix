@@ -38,7 +38,7 @@ export const Login = async (req, res)=>{
 
 
         const tokenData = {
-            id : user._id
+            id : user?._id
         }
         const token = await jwt.sign(tokenData, "aqwsedrfcfdfdfdfddvfd", {expiresIn : "1d"})
 
