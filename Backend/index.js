@@ -32,13 +32,13 @@ app.use(bodyParser.urlencoded({extended : true}))
 
 
 
-const corsOption = {
+const corsOptions = {
     origin : "https://netflix-fbgt.onrender.com",
     // origin : "https://netflix-2-0-1.onrender.com",
     credentials : true
 }
 
-app.use(cors(corsOption))
+app.use(cors(corsOptions))
 
 
 
