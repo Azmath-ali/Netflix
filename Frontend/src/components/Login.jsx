@@ -79,7 +79,9 @@ const Login = () => {
 
         const res = await axios.post(`${API_END_POINT}/register`, user,{
           headers:{
-            'Content-Type':'application/json'
+            'Content-Type':'application/json',
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS"
         },
         withCredentials:true
         })
